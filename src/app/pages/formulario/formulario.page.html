@@ -1,0 +1,33 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>
+      Formulário
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+
+  <!--Inicio do Botão Login-->
+  <ion-card>
+    <!--Botão para entrar os dados -->
+    <ion-button color="success" expand="full" (click)="dados(campEmail, campTelefone)">
+      imforme os dados
+    </ion-button>
+    <p>{{auxEmail}}</p>
+    <p>{{auxTel}}</p>
+  </ion-card>
+  <!--Fim do Botão Login-->
+
+
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar color="secondary">
+    <ion-title>Todos os direitos &copy; Roberto Silvano Lopes</ion-title>
+  </ion-toolbar>
+</ion-footer>

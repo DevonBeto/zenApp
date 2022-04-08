@@ -11,6 +11,22 @@ const routes: Routes = [
     redirectTo: 'home',
     pathMatch: 'full'
   },
+  {
+    path: 'formulario',
+    loadChildren: () => import('./pages/formulario/formulario.module').then( m => m.FormularioPageModule)
+  },
+  {
+    path: 'login',
+    loadChildren: () => import('./pages/login/login.module').then( m => m.LoginPageModule)
+  },
+  {
+    path: 'notifica',
+    loadChildren: () => import('./pages/notifica/notifica.module').then( m => m.NotificaPageModule)
+  },
+  {
+    path: 'boa-vindas',
+    loadChildren: () => import('./pages/boa-vindas/boa-vindas.module').then( m => m.BoaVindasPageModule)
+  },
 ];
 
 @NgModule({

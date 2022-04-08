@@ -1,0 +1,35 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>
+      Login
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-card>
+    <!--Entrada de dados-->
+
+    <!--Inicio do Formulário/Inputs-->
+    <ion-label>Nome:</ion-label>
+    <ion-input type="text" [(ngModel)]="campoLogin" placeholder="Digite seu Nome:"></ion-input>
+
+    <ion-label>Senha:</ion-label>
+    <ion-input type="password" [(ngModel)]="campoSenha" placeholder="Digite sua Senha:"></ion-input>
+
+    <ion-button (click)="entrar(campoLogin, campoSenha)" expand="full" color="success">
+      Entrar
+    </ion-button>
+    <!--Fim do Formulário/Inputs-->
+  </ion-card>
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar color="secondary">
+    <ion-title>Todos os direitos &copy; Roberto Silvano Lopes</ion-title>
+  </ion-toolbar>
+</ion-footer>
